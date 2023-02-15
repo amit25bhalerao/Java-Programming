@@ -1,0 +1,25 @@
+The list of additional features that have been included over the basic requirements of this project are:
+
+1. Displaying a pop up menu whenever the user clicks a city quake and highlighting information of the selected city quake in terms of its city, its country, its location and so on
+
+2. Displaying inbuilt compass over the map key to represent North Direction in the applet viewer.
+
+3. Visualisation of longitudes and latitudes of the positon over which the mouse pointer hovers.
+
+4. Implementing a display menu which highlights various information about the map such as current state of the map (e.g. zoom level), the position of the mouse pointer (e.g. geo-location), and some general information (e.g. the map tile provider, frames per second and so on).
+
+5. Making the console screen to display mouse co-ordinates of all the city quakes visited by the user.
+
+
+
+1. In order to display a "POP UP MENU HIGHLIGHTING INFORMATION OF SELECTED CITY QUAKE", we create a new method (say popUpCityClickedpopUpCityClicked()) to display the pop up when the cityquake is selected. We now have to make two choices i.e. display a pop up for a selected city quake which has no earthquakes nearby to it (say Pop_up_1) and display a pop up for a selected city quake which has earthquakes nearby (say Pop_up_2). In order to determine the value of variable (say n_quakes), storing the value of number of quakes nearby to the selected city quake, we make use of method "checkCitiesForClick()". In this method, the value of variable (n_quakes) gets updated only when it is found that the selected quake is a city quake else remains 0 by default. Now using this value of (n_quakes) variable, if (n_quakes>0), display (Pop_up_2) or else if (n_quakes = 0), display (Pop_up_1).
+
+
+2. In order to make the "Console", print all the locations along with their mouse co-ordinates in the order in which they were visited by the user, we make modifications to the "mouseClicked()" method. Whenever it is found that the earthquake clicked was a cityquake, we include a simple print statement which prints the generalised format "Location: i = X_Pixel, Y_Pixel", i varies from 1 upto n, where n - refers to the last city quake location visited by the user, X_Pixel refers to the x co-ordinate and Y_Pixel refers to the co-ordinate of ith visited location.
+
+
+3.For displaying "COMPASS", we create an object of class "CompassUI" by importing "de.fhpotsdam.unfolding.ui.CompassUI". Now with the help of this object, we invoke the constructor of CompassUI class using the code "compass_obj = new CompassUI(this,map)". In the draw() method of "EarthquakeCityMap.java", we call the draw() method associated with the object belonging to class CompassUI for drawing the compass. 
+
+4.For visualisation of "CO-ORDINATES OF LOCATION" over which the mouse hovers, we create an object of class "Location". Once created, we include the following code "Location location_obj = map.getLocation(mouseX, mouseY)" , which invokes the inbuilt getlocation() method of Unfolding Map Library using the object of type "Unfolding" and we pass "mouseX and mouseY" as two parameters to this method in order to store the values of longitudes and latitudes of the position into location_obj, over which the mouse hovers into the object of type "Location".
+
+5. In order to display a "MENU HIGHLIGHTING MAP FEATURES", we create an object of type "DebugDisplay" and invoke the constructor of this class using the object of type "DebugDisplay" by implementing the code "debugdisplay_obj = new DebugDisplay(this,map,X_Pos,Y_Pos)". Once this is done, we call the draw() method associated with the object of class "DebugDisplay" in order to display the map highlighting its details at the required position.
