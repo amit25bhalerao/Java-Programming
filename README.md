@@ -1,7 +1,7 @@
 # Java Language Programs
 
-|    Program      |                               Title of Program                                        | 
-| :-------------: | :-----------------------------------------------------------------------------------: |  
+|     Program      |                               Title of Program                                       | 
+| :--------------: | :----------------------------------------------------------------------------------: |  
 |    Prog. 001     |                               ATM Simulation Project                                 |         
 |    Prog. 002     |                                Abstract Class Demo                                   |         
 |    Prog. 003     |                                All Pairs In Array                                    |         
