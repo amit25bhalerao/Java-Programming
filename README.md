@@ -1,5 +1,8 @@
 # Java Language Programs
 
+This GitHub repository contains a collection of Java programs covering various concepts and problem-solving scenarios. Each program is designed to demonstrate a specific feature, algorithm, or pattern using the Java programming language.
+
+## Program List
 |     Program      |                               Title of Program                                       | 
 | :--------------: | :----------------------------------------------------------------------------------: |  
 |    Prog. 001     |                               ATM Simulation Project                                 |         
@@ -156,4 +159,31 @@
 |    Prog. 152     |                                         Way To Heaven                                |         
 |    Prog. 153     |                                            X Pattern                                 |        
 |    Prog. 154     |                                        YY Decreasing Pattern                         |      
-|    Prog. 155     |                                             Zig Zag Array Sum                        |        
+|    Prog. 155     |                                             Zig Zag Array Sum                        |      
+
+## How to Use
+
+To use any of the programs in this repository, follow these steps:
+
+1. Clone the repository to your local machine using the command: `git clone https://github.com/your-username/java-language-programs.git`
+2. Navigate to the program of interest within the repository.
+3. Compile the Java source file using the command: `javac ProgramName.java`
+4. Run the compiled program using the command: `java ProgramName`
+
+Make sure you have Java Development Kit (JDK) installed on your system to compile and run the programs.
+
+## Contribution
+
+If you have any additional Java programs that you'd like to contribute, feel free to submit a pull request. Contributions are always welcome and appreciated.
+
+## License
+
+The programs in this repository are available under the [MIT License](https://github.com/your-username/java-language-programs/blob/main/LICENSE). You are free to use, modify, and distribute the code for personal or commercial purposes.
+
+## Disclaimer
+
+The programs in this repository are provided as learning resources and may not be production-ready. Use them at your own discretion.
+
+Please refer to the individual program files for detailed explanations and usage instructions.
+
+Happy coding!  
